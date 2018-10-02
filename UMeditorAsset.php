@@ -9,7 +9,7 @@ use yii\web\AssetBundle;
  * @author  zhangmoxuan <1104984259@qq.com>
  * @link  http://www.zhangmoxuan.com
  * @QQ  1104984259
- * @Date  2017/7/12
+ * @Date  2018/6/18
  */
 class UMeditorAsset extends AssetBundle
 {
