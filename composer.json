@@ -1,0 +1,22 @@
+{
+    "name": "moxuandi/yii2-umeditor",
+    "description": "UMeditor，简称UM，是为满足广大门户网站对于简单发帖框，或者回复框需求所定制的在线富文本编辑器。",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","umeditor","百度编辑器mini版","在线编辑器","html编辑器"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "moxuandi",
+            "email": "1104984259@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.6",
+        "moxuandi/yii2-helpers": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "moxuandi\\umeditor\\": ""
+        }
+    }
+}
