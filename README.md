@@ -44,6 +44,7 @@ public function actions()
                 'thumbHeight' => 200,  // 缩略图的高度
                 'thumbMode' => 'outbound',  // 生成缩略图的模式, 可用值: 'inset'(补白), 'outbound'(裁剪, 默认值)
 
+                // 图片上传根目录, 配合`views`中的`$imagePath`使用
                 'rootPath' => dirname(Yii::$app->request->scriptFile),
                 'rootUrl' => Yii::$app->request->hostInfo,
             ],
@@ -64,7 +65,7 @@ $form->field($model, 'content')->widget('moxuandi\umeditor\UMEditor', [
         'initialFrameWidth' => '100%',
         'initialFrameHeight' => 400,
 
-        // 图片修正地址
+        // 图片修正地址, 配合`actions`中的`$rootPath`使用
         //'imagePath' => 'http://image.yii2advanced.com',
 
         // 定制菜单
