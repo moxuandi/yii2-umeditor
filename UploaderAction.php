@@ -9,10 +9,10 @@ use moxuandi\helpers\Uploader;
 /**
  * UMEditor 接收上传图片控制器.
  *
- * @author  zhangmoxuan <1104984259@qq.com>
- * @link  http://www.zhangmoxuan.com
- * @QQ  1104984259
- * @Date  2019-2-8
+ * @author zhangmoxuan <1104984259@qq.com>
+ * @link http://www.zhangmoxuan.com
+ * @QQ 1104984259
+ * @Date 2019-2-8
  */
 class UploaderAction extends Action
 {
