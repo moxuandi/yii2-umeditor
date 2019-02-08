@@ -20,7 +20,6 @@ class UMEditorAsset extends AssetBundle
     ];
 
     public $js = [
-        'third-party/template.min.js',
         'umeditor.config.js',
         'umeditor.min.js',
     ];

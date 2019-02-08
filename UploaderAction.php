@@ -33,7 +33,10 @@ class UploaderAction extends Action
             'thumbStatus' => false,  // 是否生成缩略图
             'thumbWidth' => 300,  // 缩略图的宽度
             'thumbHeight' => 200,  // 缩略图的高度
-            'thumbMode' => 'outbound',  // 生成缩略图的模式, 可用值: 'inset'(补白), 'outbound'(裁剪, 默认值).
+            'thumbMode' => 'outbound',  // 生成缩略图的模式, 可用值: 'inset'(补白), 'outbound'(裁剪, 默认值)
+
+            'rootPath' => dirname(Yii::$app->request->scriptFile),
+            'rootUrl' => Yii::$app->request->hostInfo,
         ];
         $this->config = array_merge($_config, $this->config);
     }
