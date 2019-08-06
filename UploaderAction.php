@@ -30,10 +30,6 @@ class UploaderAction extends Action
             'maxSize' => 1*1024*1024,  // 上传大小限制, 单位B, 默认1MB, 注意修改服务器的大小限制
             'allowFiles' => ['.png', '.jpg', '.jpeg', '.gif', '.bmp'],  // 允许上传的文件类型
             'pathFormat' => '/uploads/image/{yyyy}{mm}{dd}/{hh}{ii}{ss}_{rand:6}',  // 文件保存路径
-            'thumbStatus' => false,  // 是否生成缩略图
-            'thumbWidth' => 300,  // 缩略图的宽度
-            'thumbHeight' => 200,  // 缩略图的高度
-            'thumbMode' => 'outbound',  // 生成缩略图的模式, 可用值: 'inset'(补白), 'outbound'(裁剪, 默认值)
 
             'rootPath' => dirname(Yii::$app->request->scriptFile),
             'rootUrl' => Yii::$app->request->hostInfo,
@@ -42,8 +38,8 @@ class UploaderAction extends Action
     }
 
     /**
-     * @throws \yii\base\ErrorException
-     * @throws \yii\base\Exception
+     * @throws yii\base\ErrorException
+     * @throws yii\base\Exception
      */
     public function run()
     {

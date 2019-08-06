@@ -32,7 +32,7 @@ class UMEditor extends InputWidget
         $this->editorOptions = array_merge([
             'imageUrl' => Url::to(['UmeUpload']),
             'imagePath' => '',
-            'initialFrameWidth' => 1000,
+            'initialFrameWidth' => '100%',
             'initialFrameHeight' => 320,
             'lang' => strtolower(Yii::$app->language) == 'en-us' ? 'en' : 'zh-cn'
         ], $this->editorOptions);
