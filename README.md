@@ -11,6 +11,9 @@ UM还会提供 CDN方式，减少大家部署的成本。我们的目标不仅�
 ------------
 使用 [composer](http://getcomposer.org/download/) 下载:
 ```
+# 2.2.x(yii >= 2.0.24):
+composer require moxuandi/yii2-umeditor:"~2.2.0"
+
 # 2.x(yii >= 2.0.16):
 composer require moxuandi/yii2-umeditor:"~2.1.0"
 composer require moxuandi/yii2-umeditor:"~2.0.0"
