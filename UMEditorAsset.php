@@ -16,12 +16,12 @@ class UMEditorAsset extends AssetBundle
     public $sourcePath = '@vendor/moxuandi/yii2-umeditor/assets';
 
     public $css = [
-        'themes/default/css/umeditor.min.css',
+        'dist/themes/default/css/umeditor.min.css',
     ];
 
     public $js = [
-        'umeditor.config.js',
-        'umeditor.min.js',
+        'dist/umeditor.config.js',
+        'dist/umeditor.min.js',
     ];
 
     public $depends = [
