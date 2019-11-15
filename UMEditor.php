@@ -44,14 +44,14 @@ class UMEditor extends InputWidget
      */
     public function run()
     {
-        self::registerScript();
+        $this->registerScript();
         return $this->hasModel() ? Html::activeTextarea($this->model, $this->attribute, $this->options) : Html::textarea($this->name, $this->value, $this->options);
     }
 
     /**
      * 注册客户端脚本
      */
-    private function registerScript()
+    public function registerScript()
     {
         UMEditorAsset::register($this->view);
         $editorOptions = Json::encode($this->editorOptions);

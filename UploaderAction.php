@@ -38,7 +38,6 @@ class UploaderAction extends Action
     }
 
     /**
-     * @throws yii\base\ErrorException
      * @throws yii\base\Exception
      */
     public function run()
@@ -46,12 +45,12 @@ class UploaderAction extends Action
         // 生成上传实例对象并完成上传
         $upload = new Uploader('upfile', $this->config);
         $info = [
-            'originalName' => $upload->realName,  // 原始文件名, eg: 'img_6.jpg'
+            'originalName' => $upload->realName,   // 原始文件名, eg: 'img_6.jpg'
             'name' => $upload->fileName,           // 新文件名, eg: '083934_533790.jpg'
             'url' => $upload->fullName,            // 返回的 URL 地址, eg: '/uploads/image/20190208/083934_533790.jpg'
             'size' => $upload->fileSize,           // 文件大小, eg: 108527
             'type' => '.' . $upload->fileExt,      // 文件类型, eg: '.jpg'
-            'state' => $upload->stateInfo,         // 上传状态, 上传成功时必须返回'SUCCESS'
+            'state' => Uploader::$stateMap[$upload->status],  // 上传状态, 上传成功时必须返回'SUCCESS'
         ];
 
         // 输出结果

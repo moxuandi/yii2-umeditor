@@ -14,16 +14,13 @@ use yii\web\AssetBundle;
 class UMEditorAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/moxuandi/yii2-umeditor/assets';
-
     public $css = [
         'dist/themes/default/css/umeditor.min.css',
     ];
-
     public $js = [
         'dist/umeditor.config.js',
         'dist/umeditor.min.js',
     ];
-
     public $depends = [
         'yii\web\JqueryAsset',
     ];
