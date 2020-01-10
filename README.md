@@ -40,7 +40,6 @@ public function actions()
             'class' => 'moxuandi\umeditor\UploaderAction',
             // 可选参数, 参考 UploaderAction::$_config
             'config' => [
-                'maxSize' => 1*1024*1024,  // 上传大小限制, 单位B, 默认1MB, 注意修改服务器的大小限制
                 'allowFiles' => ['.png', '.jpg', '.jpeg', '.gif', '.bmp'],  // 允许上传的文件类型
                 'pathFormat' => '/uploads/image/{yyyy}{mm}{dd}/{hh}{ii}{ss}_{rand:6}',  // 文件保存路径
 
